@@ -1,0 +1,36 @@
+body{
+    background: rgb(58,99,180);
+    background: linear-gradient(90deg, rgba(58,99,180,1) 0%, rgba(66,29,253,1) 50%, rgba(69,202,252,1) 100%); 
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 2em;
+}
+.tateti-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.tateti-contenedor .tablero{
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: repeat(3, 7rem);
+    gap: 1rem;
+}
+.tateti-contenedor .tablero .celda {
+    background-color: aqua;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 1rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.tateti-contenedor .tablero .celda:hover{
+    background-color: rgb(111, 0, 255);
+}
